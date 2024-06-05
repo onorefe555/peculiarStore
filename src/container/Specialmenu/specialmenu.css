@@ -1,0 +1,129 @@
+.app__specialmenu{
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    /* global 94%+ browsers support */
+    background: linear-gradient(269deg, rgba(0, 0, 0, 0.91) 0%,
+    rgba(0, 0, 0, 1) 11%, rgba(0, 0, 0, 0.91) 17%, rgba(0, 0, 0, 1) 23%,
+    rgba(0, 0, 0, 1) 29%, rgba(0, 0, 0, 0.91) 35%, rgba(0, 0, 0, 1) 41%,
+    rgba(0, 0, 0, 1) 47%, rgba(0, 0, 0, 0.91) 53%, rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0.91) 66%, rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 0.91) 73%,
+    rgba(0, 0, 0, 1) 79%, rgba(0, 0, 0, 0.91) 86%, rgba(0, 0, 0, 1) 93%,
+    rgba(0, 0, 0, 1) 100%);
+    border-bottom: none;
+      
+}
+.app__specialmenu-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+.app__specialmenu-title p{
+    font-size: 25px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    font: bolder;
+    color: var(--color-white);
+}
+.app__specialmenu-title h1{
+    font-size: 53px;
+    color:#dcca87;
+}
+ .app__specialmenu-menu{
+display: flex;
+flex-direction: row;
+margin-top: 4rem;
+}
+.app__specialmenu-menu-wine{
+    flex-direction: column;
+    width: 60%;
+    padding: 10px;
+    margin-left: 30px;
+}
+.app__specialmenu-menu-wine .app__specialmenu-menu-heading{
+    font-size: 27px;
+    text-align: center;
+    font: bold;
+    color:#dcca87;
+}
+.app__specialmenu-menu-item{
+    line-height: 38px;
+    padding: 10px;
+    min-height: 200px;
+}
+.app__specialmenu-menu-item p{
+    color:var(--color-white);
+    font-size: 23px;
+}
+.app__specialmenu-menu-msg{
+    padding: 2rem;
+}
+.span_line{
+    width: 70%;
+    border: solid 1px;
+    height: 1px;
+}
+.app__specialmenu-menu-msg p{
+    color:var(--color-white);
+    line-height: 35px;
+    font-size: 18px;
+}
+.app__specialmenu-menu-images{
+    align-items: center;
+    /* margin-top: 10px; */
+}
+.app__specialmenu-menu-images img{
+    width: 80%;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.web__app-data-container{
+    display: flex;
+    flex-direction: row;
+}
+.line{
+    width: 11%;
+    border: 2px solid var(--color-white);
+    height: 0.5px;
+}
+@media screen and (max-width:1050px) {
+    .app__specialmenu-title p{
+        font-size: 20px;
+    }
+    .app__specialmenu-title h1{
+        font-size: 20px;
+    }
+    .app__specialmenu-menu-wine .app__specialmenu-menu-heading{
+        font-size:23px ;
+    }
+    .app__specialmenu-menu-item p{
+        font-size: 18px;
+    }
+    .app__specialmenu-menu-msg p{
+        line-height: 31px;
+    }
+    .app__specialmenu-menu-item{
+        line-height: 22px;
+        min-height: 20px;
+    }
+    .app__specialmenu-menu-images img{
+        min-height: 600px;
+    }
+}
+@media screen and (max-width:650px) {
+ .app__specialmenu{
+    display: flex;
+    flex-direction: column;
+ }  
+ .app__specialmenu-menu{
+flex-direction: column;
+ } 
+ .app__specialmenu-menu-images{
+    margin-top: 30px;
+ }
+ .app__specialmenu-menu-images img{
+    max-width: 300px;
+    min-height: 50px;
+ }
+}

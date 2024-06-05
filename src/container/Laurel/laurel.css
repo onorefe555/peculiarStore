@@ -1,0 +1,124 @@
+.app__bg {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction:row;
+}
+.app__wrapper-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.app__wrapper-info img{
+    width: 16px;
+    height: 35px;
+    margin-right: 0.7rem;
+}
+.app__wrapper-info .p__cormorant{
+    align-items: center;
+    color: #ddca87;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 300;
+    padding: 1rem;
+    text-decoration: underline;
+    font-weight: 200;
+}
+.app__wrapper-info h3{
+    color: var(--color-white);
+    padding-right: 1.5rem;
+    font-size: 25px;
+}
+.app__award-award-num{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.app__award-testimon-rowone{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+.app__ward-testimony{
+    display: flex;
+    flex-direction: row;
+    /* width: 30%; */
+}
+.app__ward-testimony p{
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--color-white);
+}
+.app__award-testimon-rowtwo{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem; 
+}
+.app__ward-testimony-rowtwo-text{
+    display: flex;
+    flex-direction: row; 
+}
+.app__ward-testimony-rowtwo-text p{
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--color-white);
+}
+.app__award-testimon-rowtwo{
+    flex-direction: row;
+}
+.app__wraper-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    /* padding: 1rem; */
+}
+@media screen and (max-width:1150px) {
+    .app__bg{
+        display: flex;
+        flex-direction: column;  
+      }
+      .app__wrapper-info{
+        width: 100%;
+
+      }
+      .app__wraper-img img{
+        visibility: hidden;
+        width: 1px;
+      }
+}
+@media screen and (max-width:650px) {
+    .app__bg{
+        padding: 0.1rem;
+    }
+    .app__award-testimon-rowtwo, .app__award-testimon-rowone{
+        margin: 0.9rem;
+        padding: 0;
+        flex-direction: column;
+    }
+    .app__wraper-img img{
+         visibility: visible;
+         width: 100%;
+      }
+      .app__wrapper-info h3{
+        font-size:18px;
+      }
+      .app__wrapper-info img{
+        width: 15px;
+        height:25px;
+      }
+      .app__ward-testimony p{
+        font-size: 14px;
+        line-height: 25px; 
+      }
+      .app__award-testimon-rowtwo p{
+        font-size: 14px;
+        line-height: 25px;
+      }
+      .app__wrapper-info .p__cormorant{
+        font-size: 22px;
+        padding: 0;
+      }
+}

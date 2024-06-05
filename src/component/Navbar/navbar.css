@@ -1,0 +1,130 @@
+.app__navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-black);
+    position: fixed;
+    z-index: 1;
+
+    padding: 1rem 2rem;
+    color:var(--color-white);
+}
+.App__navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+}
+.App__navbar-logo h1{
+    font-size: 35px;
+    justify-content: flex-start;
+    color: #DCCA87;
+}
+.app__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.app__navbar-links li{
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.app__navbar-links li:hover{
+    color: var(--color-grey);
+    cursor: pointer;
+}
+.app__navbar-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__navbar-login a{
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+    color: #DCCA87;
+}
+.app__navbar-login a:hover{
+    border: 1px solid var(--color-golden);
+}
+.app__navbar-login div{
+    width: 1px;
+    height: 30px;
+    background: var(--color-grey);
+}
+.app__navbar-smallscreen{
+    display:none ;
+}
+.app__navbar-smallscreen-overlay{
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-black);
+    transition: 0.5s ease;
+    flex-direction: column;
+    z-index: 5; 
+    margin-top: 4rem;
+}
+.app__navbar-smallscreen-links{
+    list-style: none;
+}
+.app__navbar-smallscreen-links li{
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family:var(--font-base) ;
+}
+.app__navbar-smallscreen-links li:hover{
+    color: #fff;
+}
+.app__navbar-smallscreen-overlay .overlay__close{
+   font-size: 27px; 
+   color: var(--color-golden);
+   cursor: pointer;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+}
+.toggle{
+    cursor: pointer;
+}
+@media screen and (max-width:2000px) {
+    .App__navbar-logo h1{
+        font-size:30px ;
+    }
+}
+@media screen and (max-width:1150px) {
+    .app__navbar-links{
+        display:none;
+    }
+    .App__navbar-logo h1{
+        font-size: 25px;
+        justify-content: flex-start;
+        padding-left: 1.4rem;
+    }
+    #app__navbar-smallscreen{
+        display:flex;
+    }
+}
+@media screen and (max-width:650px) {
+    .app__navbar{
+        padding: 1rem;
+    }
+    .app__navbar-login{
+        display: none;
+    }
+    .App__navbar-logo h1{
+        font-size: 25px;
+    }
+    .app__navbar-smallscreen-links li{
+        font-size: 20px;
+    }
+    .App__navbar-logo h1{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,53 @@
+.app__bg{
+    padding: 1rem 2rem;
+    /* background-color: #050404fa; */
+    flex-direction: row;
+    border-top: solid 1px #ffff;
+    border-bottom: solid 1px #ffff;
+    padding-top: 6rem;
+    background: radial-gradient(ellipse at 50% 50%, rgba(36, 35, 36, 1) 5%, rgba(6, 6, 6, 1) 50%,
+         rgba(6, 6, 6, 1) 72%, rgba(20, 19, 20, 0.95) 74%, rgba(6, 6, 6, 1) 86%);
+}
+.app__chef-img{
+    width: 100%;
+}
+.app__chef-img img{
+    height: 700px;
+    width: 100%;
+    align-items: center;
+    padding: 4rem;
+}
+.app__chef-specialtext{
+    color: var(#ffff);
+    width: 175%;
+}
+.app__chef-specialtext p{
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:650px) {
+    .app__bg{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .app__chef-img{
+        width: 100%;
+    }
+    .app__chef-img img{
+        height: 100%;
+    }
+    .app__chef-specialtext{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px){
+.app__chef-specialtext p{
+    line-height: 37px;
+    font-size: 17px;
+}
+}
+
+
