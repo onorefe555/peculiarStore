@@ -132,4 +132,7 @@ line-height: 2.1rem;
         align-items: center;
         margin: 20px 8px;
     }
+    .app__shop h1{
+        font-size: 18px;
+    }
 }
